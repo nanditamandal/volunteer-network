@@ -8,12 +8,15 @@ import {
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 
 import './App.css';
-import Admin from './Component/Admin/Admin';
+
 import Event from './Component/Event/Event';
 import Home from './Component/Home/Home';
 import Login from './Component/Login/Login';
 import Register from './Component/Register/Register';
 import NotMatch from './Component/NotMatch/NotMatch';
+
+import AdminHome from './Component/AdminHome/AdminHome';
+
 
 export const UserContext = createContext();
 
@@ -36,14 +39,16 @@ function App() {
             <Home></Home>
           </Route>
       
-          <Route path="/admin">
-            <Admin></Admin>
-          </Route>
+         
           <PrivateRoute path="/events">
             <Event></Event>
           </PrivateRoute>
           <Route path="/login">
             <Login></Login>
+          </Route>
+         
+          <Route path="/adminHome">
+            <AdminHome></AdminHome>
           </Route>
           <PrivateRoute path="/register/:id">
             <Register></Register>

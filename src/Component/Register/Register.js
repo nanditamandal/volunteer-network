@@ -12,7 +12,7 @@ const Register = () => {
     const [logInUser, setLogInUser]= useContext(UserContext);
     const history =useHistory();
     useEffect(()=>{
-        fetch('http://localhost:5000/findEven/'+id)
+        fetch('https://arcane-stream-85423.herokuapp.com/findEven/'+id)
         .then(res=>res.json())
         .then(data=>{
             setEvent(data);
@@ -27,7 +27,7 @@ const Register = () => {
     const eventDetails ={picture : events.picture, ...data} ;
   
      
-    fetch('http://localhost:5000/addEvent',{
+    fetch('https://arcane-stream-85423.herokuapp.com/addEvent',{
         method: 'POST',
         headers: { 'Content-Type': 'application/json',
                     'Accept': 'application/json' },
@@ -74,11 +74,12 @@ const Register = () => {
                         render={({ onChange, onBlur, value}) => (
                       
                         <ReactDatePicker
-                            
+                            dateFormat="dd MMM yyyy"
                             onChange={onChange}
                             onBlur={onBlur}
                             //selected={value}
                             selected ={value}
+                            
                         />
                         )}
                     />

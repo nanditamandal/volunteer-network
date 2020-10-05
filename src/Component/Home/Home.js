@@ -9,7 +9,7 @@ const Home = () => {
  
 
     useEffect(()=>{
-        fetch('http://localhost:5000/allVolunteerItem')
+        fetch('https://arcane-stream-85423.herokuapp.com/allVolunteerItem')
         .then(res=>res.json())
         .then(data=>{
             setVolunteer(data);
