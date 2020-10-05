@@ -1,0 +1,28 @@
+
+.header{position: absolute;
+width: 202.81px;
+height: 60px;
+left: 575px;
+top: 44px;
+}
+.header img{
+    width: 150px;
+    height: 100px;
+}
+.login{
+position: absolute;
+width: 400px;
+height: 300px;
+left: 435px;
+top: 171px;
+
+background: #FFFFFF;
+border: 1px solid #ABABAB;
+box-sizing: border-box;
+border-radius: 4px;
+  
+}
+.login img{
+    width: 20px;
+    height: 20px;
+}
