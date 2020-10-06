@@ -48,7 +48,7 @@ const Admin = () => {
     return (
         <div>
             
-            <Button variant="primary" onClick={handelAddVolunteering}>Add event</Button>
+            
             <Table striped bordered hover>
                 <thead>
                     <tr>

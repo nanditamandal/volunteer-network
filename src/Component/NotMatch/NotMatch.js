@@ -3,7 +3,7 @@ import React from 'react';
 const NotMatch = () => {
     return (
         <div>
-            not match
+            <h1>404 page not found</h1>
         </div>
     );
 };

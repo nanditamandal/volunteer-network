@@ -16,6 +16,7 @@ import Register from './Component/Register/Register';
 import NotMatch from './Component/NotMatch/NotMatch';
 
 import AdminHome from './Component/AdminHome/AdminHome';
+import AddVolunteerItem from './Component/AddVolunteerItem/AddVolunteerItem';
 
 
 export const UserContext = createContext();
@@ -38,6 +39,10 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
+          <Route path="/add">
+            <AddVolunteerItem></AddVolunteerItem>
+          </Route>
+
       
          
           <PrivateRoute path="/events">

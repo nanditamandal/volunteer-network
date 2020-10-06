@@ -24,6 +24,7 @@ const Home = () => {
             
             <div className= "container">
             <Header></Header>
+            <div style={{textAlign:"center", width:"100%"}}><h1 >I GROW BY HELPING PEOPLE NEED</h1></div>
                 {
                    volunteer &&
                    volunteer.map(
@@ -32,30 +33,8 @@ const Home = () => {
                 }
             </div>
         </Container>
-              {/* <div className="d-flex flex-column">
              
-        
-                    { volunteer &&
-                    volunteer.map(
-                        vt=> <div  onClick={()=> history.push('/login')} >
-                        <img src={vt.picture} className="card-img-top" alt="..."/>
-                        
-                        </div>
-                        )
-                }
-       
-                </div>  */}
         </>
-
-
-
-
-     
-   
-        
-            
-             
-            
 
        
     );
