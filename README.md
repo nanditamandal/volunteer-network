@@ -8,6 +8,7 @@
 -	On home page show all volunteering items. If select any item goes to login page and user can log in by google account. 
 -	After login user go to the registration page and register their selected items. One user can select one more volunteering item. 
 -	The user can cancel their events and can see all events they selected. 
+
 **Technology**
 - React JS
 - MongoDB
